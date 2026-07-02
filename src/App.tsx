@@ -54,7 +54,6 @@ const RESUME_DATA = {
     title: "Transforming complex data into actionable insights and engineering scalable solutions. Passionate about AI ethics, predictive modeling, and building impactful products.",
     location: "India",
     email: "saharsh.sriva08@gmail.com",
-    phone: "+91 9319957794",
     links: {
       linkedin: "https://linkedin.com/in/saharsh-srivastava",
       github: "https://github.com/saharsh8",
@@ -585,13 +584,6 @@ export default function App() {
                   <MapPin className="w-3.5 h-3.5 text-neon-primary" />
                   <span>{RESUME_DATA.basics.location}</span>
                 </span>
-                <a 
-                  href={`tel:${RESUME_DATA.basics.phone}`}
-                  className="flex items-center space-x-1 bg-white/5 border border-white/5 hover:border-neon-primary/30 px-2.5 py-1 rounded-md hover:text-white transition-all"
-                >
-                  <span className="w-3.5 h-3.5 text-neon-primary font-bold">#</span>
-                  <span>{RESUME_DATA.basics.phone}</span>
-                </a>
                 <a 
                   href={mailToLink}
                   className="flex items-center space-x-1 bg-white/5 border border-white/5 hover:border-neon-primary/30 px-2.5 py-1 rounded-md hover:text-white transition-all"

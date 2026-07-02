@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-neon-primary: #00ff88;
+  --color-neon-secondary: #00e5ff;
+  --color-cyber-dark: #030712;
+  --color-cyber-light: #f9fafb;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body, a, button, input, textarea {
+  cursor: none;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 229, 255, 0.2);
+    border-radius: 9999px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 255, 136, 0.4);
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .glass-card-light {
+    background: rgba(0, 0, 0, 0.02);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.15);
+  }
+
+  .glow-secondary {
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.15);
+  }
+
+  .glow-text-primary {
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+  }
+
+  .glow-text-secondary {
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+  }
+}
+
+/* Custom styles for animations and styling */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s infinite ease-in-out;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+

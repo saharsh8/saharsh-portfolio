@@ -1,0 +1,6 @@
+{
+  "name": "Saharsh Srivastava Portfolio",
+  "description": "Futuristic portfolio website for Saharsh Srivastava, AI/ML and Web Developer, featuring RAG systems, interactive dashboards, and responsive design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

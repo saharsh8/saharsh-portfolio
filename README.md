@@ -1,20 +1,64 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Saharsh Srivastava | Interactive AI-Native Portfolio
 
-# Run and deploy your AI Studio app
+A modern, highly interactive personal portfolio website showcasing projects, experience, and technical skills in AI and Software Engineering. Built with React, Tailwind CSS, and Framer Motion, featuring a custom terminal widget and an integrated mock AI assistant.
 
-This contains everything you need to run your app locally.
+## ✨ Features
 
-View your app in AI Studio: https://ai.studio/apps/1a210b84-acc1-4e29-b6ac-48efce02b785
+- **🤖 Integrated AI Assistant:** A mock chatbot interface simulating a personal AI assistant to answer questions about the resume contextually.
+- **💻 Terminal Widget:** A simulated command-line interface mimicking an AI/ML model deployment boot-up sequence.
+- **🎨 Cyber-Themed UI:** Dark mode by default, featuring glassmorphism, neon glow accents (Cyan and Purple), and a dynamic interactive custom cursor.
+- **⚡ Fluid Animations:** Smooth page transitions, staggered entry animations, and interactive hover effects powered by `motion` (Framer Motion).
+- **📱 Fully Responsive:** Carefully optimized layout for both mobile, tablet, and desktop viewing experiences.
+- **📄 Data-Driven Structure:** All resume data (experience, skills, projects) is cleanly isolated in a single `data.ts` file for incredibly easy maintenance.
 
-## Run Locally
+## 🛠️ Tech Stack
 
-**Prerequisites:**  Node.js
+- **Framework:** [React 18](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Animations:** [Motion (Framer Motion)](https://motion.dev/)
+- **Icons:** [Lucide React](https://lucide.dev/)
 
+## 🚀 Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+To run this project locally, follow these steps:
+
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/saharsh8/portfolio.git
+   cd portfolio
+Install dependencies:
+code
+Bash
+npm install
+Start the development server:
+code
+Bash
+npm run dev
+Open in browser:
+Navigate to http://localhost:3000 (or the local port provided in your terminal).
+📂 Project Structure
+code
+Text
+src/
+├── components/      # Reusable UI components (if separated)
+├── App.tsx          # Main application file & layout
+├── data.ts          # Centralized resume and portfolio data
+├── index.css        # Global styles & Tailwind configuration
+└── main.tsx         # React application entry point
+⚙️ Customizing Your Data
+The portfolio is designed to be easily customizable without having to dig deep into the component tree. All personal information is stored centrally.
+Open src/data.ts.
+Modify the RESUME_DATA object with your own details, including basics, experience, projects, and skills.
+The React UI will automatically map and populate the new data across all sections and the AI Chatbot's context.
+🔗 Links
+LinkedIn: Saharsh Srivastava
+GitHub: @saharsh8
+📝 License
+This project is open-source and available under the MIT License.

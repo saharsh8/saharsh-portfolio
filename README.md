@@ -1,6 +1,6 @@
 # Saharsh Srivastava | Interactive AI-Native Portfolio
 
-A modern, highly interactive personal portfolio website showcasing projects, experience, and technical skills in AI and Software Engineering. Built with React, Tailwind CSS, and Framer Motion, featuring a custom terminal widget and an integrated mock AI assistant.
+A modern, highly interactive personal portfolio website showcasing projects, experience, and technical skills in AI and Software Engineering. Built with React, Tailwind CSS, and Framer Motion.
 
 ## ✨ Features
 
@@ -24,6 +24,7 @@ A modern, highly interactive personal portfolio website showcasing projects, exp
 To run this project locally, follow these steps:
 
 ### Prerequisites
+
 - Node.js (v18 or higher recommended)
 - npm or yarn
 
@@ -33,32 +34,45 @@ To run this project locally, follow these steps:
    ```bash
    git clone https://github.com/saharsh8/portfolio.git
    cd portfolio
-Install dependencies:
-code
-Bash
-npm install
-Start the development server:
-code
-Bash
-npm run dev
-Open in browser:
-Navigate to http://localhost:3000 (or the local port provided in your terminal).
-📂 Project Structure
-code
-Text
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser:**
+   Navigate to `http://localhost:3000` (or the local port provided in your terminal).
+
+## 📂 Project Structure
+
+```
 src/
 ├── components/      # Reusable UI components (if separated)
 ├── App.tsx          # Main application file & layout
 ├── data.ts          # Centralized resume and portfolio data
 ├── index.css        # Global styles & Tailwind configuration
 └── main.tsx         # React application entry point
-⚙️ Customizing Your Data
+```
+
+## ⚙️ Customizing Your Data
+
 The portfolio is designed to be easily customizable without having to dig deep into the component tree. All personal information is stored centrally.
-Open src/data.ts.
-Modify the RESUME_DATA object with your own details, including basics, experience, projects, and skills.
-The React UI will automatically map and populate the new data across all sections and the AI Chatbot's context.
-🔗 Links
-LinkedIn: Saharsh Srivastava
-GitHub: @saharsh8
-📝 License
-This project is open-source and available under the MIT License.
+
+1. Open `src/data.ts`
+2. Modify the `RESUME_DATA` object with your own details, including basics, experience, projects, and skills.
+3. The React UI will automatically map and populate the new data across all sections and the AI Chatbot's context.
+
+## 🔗 Links
+
+- **LinkedIn:** [Saharsh Srivastava](https://linkedin.com/in/saharsh-srivastava)
+- **GitHub:** [@saharsh8](https://github.com/saharsh8)
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
